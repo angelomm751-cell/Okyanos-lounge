@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Okyanos Lounge | Esposende</title>
+<meta name="description" content="Okyanos Lounge — food, drinks e ambiente lounge em Esposende.">
+<meta name="theme-color" content="#0c1112">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b1011;--deep:#101719;--sea:#6e9b98;--mist:#dfe9e5;--cream:#f4f1e8;--gold:#c9aa72;--line:rgba(223,233,229,.16);--muted:#aab9b5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}
+.page{overflow:hidden}.topline{height:3px;background:linear-gradient(90deg,var(--gold),var(--sea),var(--gold))}
+header{position:absolute;z-index:10;top:0;left:0;width:100%;padding:24px 5vw;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:Manrope,sans-serif;font-weight:700;letter-spacing:.22em;font-size:15px}.logo span{color:var(--sea)}
+nav{display:flex;gap:28px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#e7ece9}nav a{opacity:.8}nav a:hover{opacity:1;color:#fff}
+.hero{min-height:92vh;position:relative;display:grid;align-items:end;padding:150px 5vw 70px;background:linear-gradient(90deg,rgba(7,12,13,.94) 0%,rgba(7,12,13,.65) 44%,rgba(7,12,13,.26) 100%),url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=2200&q=85") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(transparent,var(--ink));pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:820px}.eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--sea);margin-bottom:20px}
+h1{font-family:Manrope,sans-serif;font-size:clamp(54px,8vw,108px);line-height:.91;letter-spacing:-.065em;margin:0 0 28px;max-width:850px;font-weight:600}
+.hero p{max-width:570px;color:#d3dcda;font-size:17px;line-height:1.7;margin:0 0 34px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 21px;border:1px solid rgba(244,241,232,.35);font-size:12px;letter-spacing:.1em;text-transform:uppercase}.btn.primary{background:var(--cream);color:var(--ink);border-color:var(--cream)}.btn:hover{transform:translateY(-1px)}
+.stamp{position:absolute;right:7vw;bottom:95px;z-index:3;width:120px;height:120px;border:1px solid rgba(201,170,114,.55);border-radius:50%;display:grid;place-items:center;text-align:center;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#e7d8ba;background:rgba(8,14,15,.28);backdrop-filter:blur(6px)}.stamp:before{content:"";position:absolute;inset:9px;border:1px solid rgba(110,155,152,.4);border-radius:50%}
+section{padding:110px 5vw}.intro{display:grid;grid-template-columns:1fr 1.25fr;gap:9vw;align-items:start;background:var(--ink)}.kicker{color:var(--gold);font-size:10px;letter-spacing:.28em;text-transform:uppercase}.intro h2,.experience h2{font-family:Manrope,sans-serif;font-size:clamp(35px,5vw,65px);line-height:1.02;letter-spacing:-.045em;margin:18px 0}.intro-copy{max-width:620px;color:#b9c5c1;font-size:17px;line-height:1.85}.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.num{border-top:1px solid var(--line);padding-top:16px}.num strong{font-size:28px;font-family:Manrope}.num span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.experience{background:var(--cream);color:var(--ink);display:grid;grid-template-columns:1.1fr .9fr;gap:7vw;align-items:center}.experience .kicker{color:#668b87}.experience p{color:#55615e;line-height:1.8;max-width:590px}.photo{min-height:520px;background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1300&q=85") center/cover;position:relative}.photo:after{content:"OKYANOS / LOUNGE";position:absolute;bottom:20px;left:20px;font-size:10px;letter-spacing:.25em;background:rgba(11,16,17,.78);padding:10px 12px;color:#f4f1e8}
+.menu{background:#121a1b}.menu-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.menu-head h2{font-family:Manrope;font-size:clamp(38px,5vw,64px);letter-spacing:-.05em;margin:12px 0 0}.menu-note{max-width:330px;color:var(--muted);font-size:13px;line-height:1.6}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line)}.menu-card{background:#121a1b;padding:34px 30px;min-height:250px;position:relative}.menu-card:nth-child(2){background:#172122}.menu-card:nth-child(3){background:#0f1617}.menu-card .n{color:var(--gold);font-size:10px;letter-spacing:.2em}.menu-card h3{font-family:Manrope;font-size:24px;margin:55px 0 13px}.menu-card p{color:#9faeaa;line-height:1.6;font-size:14px;max-width:300px}
+.gallery{padding-bottom:30px}.gallery-grid{display:grid;grid-template-columns:1.3fr .7fr .9fr;grid-template-rows:260px 260px;gap:10px}.gallery-grid div{background-size:cover;background-position:center}.g1{grid-row:1/3;background-image:url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=85")}.g2{background-image:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85")}.g3{background-image:url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85")}.g4{grid-column:2/4;background-image:url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85")}
+.contact{background:var(--cream);color:var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:8vw}.contact h2{font-family:Manrope;font-size:clamp(42px,6vw,78px);letter-spacing:-.06em;line-height:.95;margin:14px 0 25px}.contact p{color:#58635f;line-height:1.75;max-width:520px}.contact-list{border-top:1px solid #c7c5ba}.contact-item{padding:20px 0;border-bottom:1px solid #c7c5ba;display:flex;justify-content:space-between;gap:20px;font-size:14px}.contact-item small{text-transform:uppercase;letter-spacing:.18em;color:#777;font-size:9px}.contact-item a:hover{color:#648c88}
+footer{padding:28px 5vw;display:flex;justify-content:space-between;gap:20px;color:#74817e;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-top:1px solid var(--line)}
+@media(max-width:800px){header{padding:20px 5vw}nav{display:none}.hero{min-height:88vh;padding:125px 5vw 65px}.stamp{display:none}.hero p{font-size:15px}.intro,.experience,.contact{grid-template-columns:1fr;gap:45px}.menu-head{display:block}.menu-note{margin-top:20px}.menu-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.g1{grid-row:1/3}.g4{grid-column:1/3}.photo{min-height:390px}.numbers{gap:10px}.num strong{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="topline"></div>
+<header>
+<a class="logo" href="#top">OKY<span>ANOS</span></a>
+<nav><a href="#experiencia">Experiência</a><a href="#menu">Menu</a><a href="#galeria">Galeria</a><a href="#contacto">Contacto</a></nav>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Esposende · Food · Drinks · Lounge</div>
+<h1>Mais do que<br>uma mesa.</h1>
+<p>Um espaço para comer, beber e ficar. Okyanos Lounge reúne comida, bebidas e ambiente num lugar pensado para aproveitar sem pressa.</p>
+<div class="ctas"><a class="btn primary" href="#menu">Descobrir</a><a class="btn" href="#contacto">Encontrar-nos</a></div>
+</div>
+<div class="stamp">Esposende<br><span style="color:#6e9b98">by the sea</span></div>
+</section>
+
+<section class="intro" id="experiencia">
+<div><div class="kicker">01 / A experiência</div><h2>Chegar.<br>Ficar.<br>Repetir.</h2></div>
+<div><p class="intro-copy">Há lugares onde se vai apenas comer. E há lugares onde se fica mais um pouco. O Okyanos foi pensado nesse segundo grupo — com uma atmosfera descontraída, comida, bebidas e espaço para transformar uma saída normal num bom momento.</p>
+<div class="numbers"><div class="num"><strong>01</strong><span>Food</span></div><div class="num"><strong>02</strong><span>Drinks</span></div><div class="num"><strong>03</strong><span>Lounge</span></div></div></div>
+</section>
+
+<section class="experience">
+<div class="photo"></div>
+<div><div class="kicker">02 / O espaço</div><h2>Um ambiente para o dia e para a noite.</h2><p>Do primeiro café ao último copo, a experiência muda com o momento. Aqui, a ideia é simples: boa comida, boas bebidas e um espaço onde apetece estar.</p><a class="btn" style="display:inline-block;margin-top:15px" href="#contacto">Visitar Okyanos</a></div>
+</section>
+
+<section class="menu" id="menu">
+<div class="menu-head"><div><div class="kicker">03 / Food & drinks</div><h2>Escolhe o teu momento.</h2></div><p class="menu-note">Uma seleção apresentada de forma simples. A carta pode ser atualizada sempre que quiserem.</p></div>
+<div class="menu-grid">
+<article class="menu-card"><div class="n">01 — FOOD</div><h3>Para partilhar</h3><p>Petiscos, pratos e opções para acompanhar a conversa e ficar mais um pouco.</p></article>
+<article class="menu-card"><div class="n">02 — DRINKS</div><h3>Para brindar</h3><p>Bebidas, cocktails e opções para começar a noite ou prolongar o momento.</p></article>
+<article class="menu-card"><div class="n">03 — LOUNGE</div><h3>Para ficar</h3><p>Um espaço descontraído para encontros, amigos, família e noites sem pressa.</p></article>
+</div>
+</section>
+
+<section class="gallery" id="galeria">
+<div class="kicker" style="margin-bottom:25px">04 / Atmosfera</div>
+<div class="gallery-grid"><div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div></div>
+</section>
+
+<section class="contact" id="contacto">
+<div><div class="kicker">05 / Encontra-nos</div><h2>Vemo-nos<br>no Okyanos.</h2><p>R. Misericórdia, nº 24, R/C Loja 4, Esposende. Para informações ou reservas, fala diretamente com a equipa.</p></div>
+<div class="contact-list">
+<div class="contact-item"><small>Telefone</small><a href="tel:+351937405427">+351 937 405 427</a></div>
+<div class="contact-item"><small>Morada</small><span>Esposende · Portugal</span></div>
+<div class="contact-item"><small>Instagram</small><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></div>
+<div class="contact-item"><small>Maps</small><a href="https://www.google.com/maps/search/?api=1&query=Okyanos+Lounge+Esposende" target="_blank" rel="noopener">Abrir localização ↗</a></div>
+</div>
+</section>
+</main>
+<footer><span>© Okyanos Lounge</span><span>Esposende · Portugal</span></footer>
+</div>
+</body>
+</html>
